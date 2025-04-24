@@ -7,6 +7,9 @@
 $ node -v
 $ brew install artillery
 
+# Windows 사용자는 powershell에서 npm을 사용하여 설치
+$ npm install -g artillery​
+
 # Getting Started
 $ curl http://asciiart.artillery.io:8080/dino
                        _. - ~ ~ ~ - .
