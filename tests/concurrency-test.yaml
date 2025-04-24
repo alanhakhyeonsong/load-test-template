@@ -1,0 +1,18 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 1
+      arrivalCount: 7
+  defaults:
+    headers:
+      Content-Type: "application/json"
+  processor: "./processor.js"
+
+scenarios:
+  - name: "동시 5건 POST with random message"
+    flow:
+      - function: "randomMessage"
+      - post:
+          url: "/test-kafka/batch"
+          json:
+            message: "{{ message }}"
