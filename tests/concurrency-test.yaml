@@ -1,6 +1,7 @@
 config:
   target: "http://localhost:8080"
   phases:
+    # 1초간 동시 요청 n건
     - duration: 1
       arrivalCount: 7
   defaults:
@@ -9,7 +10,7 @@ config:
   processor: "./processor.js"
 
 scenarios:
-  - name: "동시 5건 POST with random message"
+  - name: "동시요청 POST with random message"
     flow:
       - function: "randomMessage"
       - post:
