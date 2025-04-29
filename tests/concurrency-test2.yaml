@@ -1,0 +1,11 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 1
+      arrivalCount: 10
+
+scenarios:
+  - name: "토큰 발급 시 분산락이 적용된 인스턴스 조회 API 동시요청 테스트"
+    flow:
+      - get:
+          url: "/test/flex/instances/BdnL?stationId=0"
