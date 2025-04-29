@@ -33,3 +33,4 @@ $ artillery run example-load-test.yaml
 ## Test Scripts & Runs
 - [Test Script - Artillery Docs](https://www.artillery.io/docs/reference/test-script)
 - [Run as Artillery test - Artillery Docs](https://www.artillery.io/docs/reference/cli/run)
+- [HTTP Engine - Artillery Docs](https://www.artillery.io/docs/reference/engines/http#get--post--put--patch--delete-requests)
